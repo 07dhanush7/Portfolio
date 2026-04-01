@@ -12,7 +12,7 @@ const FOCUSABLE_SELECTORS = [
   '[tabindex]:not([tabindex="-1"])',
 ].join(", ");
 
-const ResumeModal = ({ isOpen, onClose, resumeUrl = "/resume.pdf" }) => {
+const ResumeModal = ({ isOpen, onClose, resumeUrl = "/Portfolio/resume.pdf" }) => {
   const modalRef = useRef(null);
   const closeButtonRef = useRef(null);
 

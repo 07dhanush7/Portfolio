@@ -78,19 +78,21 @@ const HeroSection = ({ profile, onOpenResume }) => {
               {profile.ctaLabel}
             </a>
 
-            <a
-              href="#contact"
-              className="rounded-full border border-white/14 bg-white/[0.05] px-7 py-3 text-sm font-semibold text-white/80 transition hover:bg-white/10 hover:text-white whitespace-nowrap"
-            >
-              Start a Conversation
-            </a>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="#contact"
+                className="rounded-full border border-white/14 bg-white/[0.05] px-7 py-3 text-sm font-semibold text-white/80 transition hover:bg-white/10 hover:text-white whitespace-nowrap"
+              >
+                Start a Conversation
+              </a>
 
-            <button
-              onClick={onOpenResume}
-              className="rounded-full border border-white/14 bg-white/[0.05] px-7 py-3 text-sm font-semibold text-white/80 transition hover:bg-white/10 hover:text-white whitespace-nowrap"
-            >
-              View Resume
-            </button>
+              <button
+                onClick={onOpenResume}
+                className="rounded-full border border-white/14 bg-white/[0.05] px-7 py-3 text-sm font-semibold text-white/80 transition hover:bg-white/10 hover:text-white whitespace-nowrap"
+              >
+                View Resume
+              </button>
+            </div>
 
           </div>
 
