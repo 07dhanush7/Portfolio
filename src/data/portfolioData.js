@@ -102,7 +102,7 @@ export const contactDetails = {
   title: 'Let us build something modern together',
   description:
     'If you want a portfolio, landing page, or full stack product with clean visuals and reliable implementation, I would love to connect.',
-  email: 'dhanushragavarv727@gmail.com',
+  email: 'dhanushragava727@gmail.com',
   phone: '+91 9353394179',
   location: 'Bangalore, India',
 };

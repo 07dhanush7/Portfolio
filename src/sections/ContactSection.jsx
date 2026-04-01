@@ -1,5 +1,6 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { FaEnvelope, FaPhoneFlip, FaLocationDot } from "react-icons/fa6";
 import Reveal from "../components/Reveal";
 import SectionIntro from "../components/SectionIntro";
 
@@ -124,6 +125,38 @@ const ContactSection = ({ contactDetails }) => {
             <p className="mt-4 text-white/70">
               {contactDetails.description}
             </p>
+
+            <div className="mt-10 flex flex-col gap-6">
+              <div className="flex items-center gap-4">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-xl text-fuchsia-400">
+                  <FaEnvelope />
+                </span>
+                <div>
+                  <p className="text-sm text-white/50 uppercase tracking-widest">Email</p>
+                  <p className="text-white font-medium">{contactDetails.email}</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-xl text-fuchsia-400">
+                  <FaPhoneFlip />
+                </span>
+                <div>
+                  <p className="text-sm text-white/50 uppercase tracking-widest">Phone</p>
+                  <p className="text-white font-medium">{contactDetails.phone}</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-xl text-fuchsia-400">
+                  <FaLocationDot />
+                </span>
+                <div>
+                  <p className="text-sm text-white/50 uppercase tracking-widest">Location</p>
+                  <p className="text-white font-medium">{contactDetails.location}</p>
+                </div>
+              </div>
+            </div>
           </Reveal>
 
           {/* FORM */}
